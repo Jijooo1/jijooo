@@ -1,0 +1,230 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+background-image: linear-gradient(to right,red ,blue , orange , white);
+width: 100%;
+height: 110px;
+clip-path: polygon(100% 0%, 90% 48%, 100% 100%, 0 100%, 0 49%, 0 0);
+border-top: 5px double black;
+border-bottom: 5px double black;
+text-emphasis-style: double-circle;
+
+}
+span img{
+  float: right;
+  width: 100px;
+border-radius: 50%;
+animation-name: rotate-scale-up ;
+animation-duration: 0.7s;
+animation-duration: 5m;
+animation-fill-mode: both;
+animation-timing-function: linear;
+animation-delay:0s;
+animation-iteration-count: infinite;
+
+
+}
+#si{
+  display: none;
+}
+@keyframes rotate-scale-up{0%{transform:scale(1) rotateZ(0)}50%{transform:scale(2) rotateZ(180deg)}100%{transform:scale(1) rotateZ(360deg)}}
+span h1{
+display: inline-block;
+  line-height: 100px;
+  float: right;
+  transform: translate(-430px);
+}
+nav li{
+  display: inline-block;
+  line-height: 100px;
+text-decoration: none;
+color: white;
+
+}
+nav {
+    text-align: center;
+    transform: translate(-373px,0px);
+}
+nav a{
+color: white;
+margin: 10px;
+  text-decoration: none;
+}
+nav li:hover{
+  background-color: orange;
+  color: black;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+
+}
+main{
+  background-color: orange;
+  width: 70%;
+  height:900px;
+  border-radius: 50px;
+  border: solid 3px red;
+float: right;
+position: relative;
+animation-name: color-change-5x;
+animation-duration: 13s;
+animation-iteration-count: infinite;
+
+}
+article{
+  position: absolute;
+}
+form {
+  color: white;
+  text-align: justify;
+  line-height: 20px;
+transform: translate(10px , 20px);
+display: inline-block;
+border: 4px green double  ;
+resize: both;
+overflow: auto;
+border-radius: 20%;
+padding:30px;
+box-shadow:23px 20px #a3767638;
+}
+aside{
+  border-radius: 50px;
+border: 4px double red;
+width: 28%;
+height: 400px;
+float: left;
+
+}
+#ima{
+border-radius: 50%;
+transform: translate(80px );
+
+}
+
+@keyframes color-change-5x{0%{background:#19dcea}25%{background:#b22cff}50%{background:#ea2222}75%{background:#f5be10}100%{background:#3bd80d}}
+div{
+  width: 100%;
+display: flex;
+justify-content: center;
+margin-top: 15px;
+}
+div img{
+  width: 50px;
+  border-bottom: 2px solid red;
+  padding: 20px;
+  border-radius: 50%;
+}
+h3{
+  text-align: center;
+  line-height: 50px;
+}
+div img:hover{
+  clip-path: polygon(50% 0%, 69% 29%, 98% 35%, 81% 57%, 100% 100%, 49% 83%, 0 100%, 20% 56%, 2% 35%, 30% 30%);
+  border-bottom: solid black 3px;
+  width: 100px;
+  background-color: orange;
+  transition:0.4s 0.5s width ,0.5s 0.3s height , 2s background-color ;
+
+}
+footer{
+  background-image: linear-gradient(to right,white ,orange , blue , red);
+  width: 100%;
+  height: 110px;
+float: left;
+clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+border-top: 5px double black;
+border-bottom: 5px double black;
+position:  inherit;
+}
+marquee img{
+  width: 100px;
+  height: 100px;
+  transform: translate(0px , -45px);
+  border-radius: 50%;
+  margin: 50px;
+
+}
+.inp:focus{
+  padding: 5px;
+  background: red;
+}
+#lang{
+ transform: translate(-257px , 130px);;
+}
+.but{
+  border: 2px red;
+  border-style: dotted;
+  width: 190px;
+  color: red;
+  font-style: oblique;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 40px;
+  border-radius: 50%;
+  animation-name: flip-scale-up-diag-2;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+@keyframes flip-scale-up-diag-2{0%{transform:scale(1) rotate3d(-1,1,0,0deg)}50%{transform:scale(1.5) rotate3d(-1,1,0,70deg)}50%{transform:scale(0.5) rotate3d(-1,1,0,50deg)}}
+#me{
+  position:   absolute;
+  border-radius: 10%;
+}
+#open{
+  position: absolute;
+  bore
+}
+#map{
+  width: 400px;
+  height: 450px;
+  transform:translate(-0px , -0px);
+  border-radius: 10px 100px ;
+  opacity: 30px;
+}
+.map{
+  border: 5px  outset #f51010;
+transform:translate(-0px , 250px);
+border-radius: 10px 100px ;
+opacity:0.5;
+
+}
+.map:hover{
+  opacity: 1;
+}
+@media print{
+  header{
+    display: none;
+  }
+  #si{
+    display: block;
+  }
+}
+.list{
+  float: right;
+}
+nav ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+nav li{
+  float: right;
+}
+@media only screen and (max-width:720px) and (min-width:400px) {
+  #st{
+    transform: translate(90px, 40px);
+    position:absolute;
+    font-size:25px
+  }
+  nav a{
+    color: white;
+      margin: 10px;
+        text-decoration: none;
+        position:  relative;
+        right: -150px;
+        display: block;
+        line-height:4px
+      }
+  }
+}

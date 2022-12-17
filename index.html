@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <meta charset="utf-8">
+    <title>web.com</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="icon" href="ro.jpg">
+  </head>
+  <body>
+<header id="he">
+
+  <span id="sp">
+<h1 id="st">Jihad Websites .Com</h1>
+<img src="ro.jpg" >
+</span>
+
+<nav id="na">
+  <ul>
+  <li><a href="menu.jpg">Menu</a></li>
+  <li><a href="hani.mp4" >Videos-Images</a></li>
+  <li><a  href="images.jpg">Options</a></li>
+
+  </ul>
+</nav>
+
+</header>
+
+<main id="mn">
+  <h1 id="si"> this site for print</h1>
+  <form>
+    <label class="tex">Email</label>
+    <input oninput="error_message(this)" oninvalid="error_message(this)" class="inp" type="email" name="mail" value="" required>
+    <br>
+    <br>
+    <label class="tex">Password</label>
+      <input oninput="error_message5(this)" oninvalid="error_message5(this)" minlength="6" class="inp" type="password" name="mail" required value="">
+    <br>
+    <button  type="submit" name="mail">Sign in </button>
+    &nbsp
+    <button type="submit" name="mail">Register</button>
+  </form>
+  <script>
+  function error_message (input){
+    if (input.value=='') {
+      input.setCustomValidity('this input not right')
+    }
+  else if (input.validity.typeMismatch) {
+    input.setCustomValidity('this input not right neverrrr')
+  }else {
+    input.setCustomValidity('')
+  }return true;}
+
+
+  function error_message5(input){
+    if (input.value=='') {
+      input.setCustomValidity('please put the right')
+    }else if (input.validity.typeMismatch) {
+      input.setCustomValidity('wrong password')
+    }
+    else {input.setCustomValidity('');
+    }return true;}
+  </script>
+
+<form id="lang">
+  <label>Languages</label>
+<select>
+<option value="">choose your option</option>
+<option  value="Arabic">Arabic</option>
+<option value="English">English</option>
+<option value="Germany">Germany</option>
+</select>
+
+</form>
+
+<button class="but" onclick="show()">push</button>
+<dialog id="open">
+
+<h1>Menu of restaurant</h1>
+<img id="me"src="menu.jpg" alt="">
+<button class="but" onclick="hide()">Hide</button>
+</dialog>
+
+<script>
+function show(){
+  document.getElementById('open').setAttribute("open","true")
+}
+function hide(){document.getElementById('open').removeAttribute("open")}
+
+</script>
+
+
+
+
+
+
+</main>
+
+
+
+
+<aside >
+
+
+
+<div>
+  <a  href="tell:0097167875545">
+<img src="pica1.png" ></a>
+
+<a  href="www.facebook.com">
+<img  src="pica2.png" ></a>
+
+<a href="#">
+<img  src="pica3.png" ></a>
+
+</div>
+<h3>Contact Box</h3>
+
+<div class="map">
+
+
+<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6584.20099110903!2d35.84203599999999!3d34.398791500000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slb!4v1670005115324!5m2!1sen!2slb" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</aside>
+
+<br>
+<br>
+<br>
+
+
+
+<footer>
+<marquee  behavior="alternate"  scrollamount="10"  >
+<img src="ro.jpg ">
+<img src="ro1.jpg ">
+<img src="round.jpg ">
+<img src="icon(1).jpg ">
+</marquee>
+
+
+</footer>
+  </body>
+</html>
