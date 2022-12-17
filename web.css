@@ -211,9 +211,9 @@ nav ul{
 nav li{
   float: right;
 }
-@media only screen and (max-width:720px) and (min-width:400px) {
+@media only screen and (max-width:720px) {
   #st{
-    transform: translate(90px, 40px);
+    transform: translate(21px, 40px);
     position:absolute;
     font-size:25px
   }
@@ -222,9 +222,55 @@ nav li{
       margin: 10px;
         text-decoration: none;
         position:  relative;
-        right: -150px;
+        right: -316px;
         display: block;
         line-height:4px
       }
+      #map {
+        width: 300px;
+      height: 520px;
+      transform: translate(-13px , 1px)
+    border: 0px;
   }
+  #lang {
+    transform: translate(0px , 240px);}
+
+main {
+    background-color: orange;
+    width: 97%;
+    height: 600px;
+    border-radius: 50px;
+    border: solid 3px red;
+    float: none;
+    position: relative;
+    animation-name: color-change-5x;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+}
+div img {
+    width: 55px;
+    border-bottom: 2px solid red;
+    padding: 28px;
+    border-radius: 50%;
+    transform: translate(4px, 10px);}
+    aside {
+    border-radius: 50px;
+    border: 4px double red;
+    width: 96%;
+    height: 184px;
+    float: left;}
+    footer {
+    background-image: linear-gradient(to right,white ,orange , blue , red);
+    width: 367px;
+    height: 110px;
+    transform: translate(14px, 79px);
+    float: left;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+    border-top: 5px double black;
+    border-bottom: 5px double black;
+    position: inherit;}
+    #me {
+    position: absolute;
+    border-radius: 10%;
+    width: 350px;}
 }
